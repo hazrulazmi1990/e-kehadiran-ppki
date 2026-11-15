@@ -1,0 +1,407 @@
+<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>e-Kehadiran PPKI V2.0 — Sejarah Kelas Ujian</title><style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#152b41;background:#f1f5fa}*{box-sizing:border-box}body{margin:0}.shell{max-width:1150px;margin:auto;padding:20px}.top{background:linear-gradient(120deg,#123d70,#167c91);color:white;padding:24px;border-radius:20px}.top h1{margin:0 0 4px;font-size:clamp(22px,4vw,31px)}.top p{margin:0;opacity:.9}.badge{display:inline-block;background:#fff3c7;color:#745000;padding:5px 10px;border-radius:30px;font-size:12px;font-weight:800;margin-bottom:10px}.nav{display:flex;gap:8px;overflow:auto;padding:16px 0}.nav button{white-space:nowrap}.btn,button,select,input{font:inherit}button{cursor:pointer;border:0;border-radius:11px;padding:11px 15px;background:#e5edf7;color:#143e67;font-weight:700}button.active,.primary{background:#1568a5;color:white}.success{background:#16805c;color:white}.danger{background:#fce5e5;color:#a02e2e}.ghost{background:white;border:1px solid #d4e0eb}.card{background:white;border-radius:16px;padding:19px;margin-bottom:15px;box-shadow:0 3px 18px #143b6310}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{font-size:29px;font-weight:800;margin:8px 0}.muted{color:#66788b;font-size:13px}.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.field{display:flex;flex-direction:column;gap:5px;min-width:150px;flex:1}input,select{border:1px solid #ccd9e5;border-radius:10px;padding:11px;background:white;min-width:0;width:100%}label{font-size:13px;font-weight:700}.student{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #edf1f6}.choices{display:flex;gap:5px;flex-wrap:wrap}.choices button{padding:9px 11px;font-size:13px}.choices .yes{background:#d8f5e7;color:#08663f}.choices .no{background:#ffe0e0;color:#9c2424}.choices .selected{outline:3px solid #2c81bd;outline-offset:1px}.notice{background:#fff8df;border-left:4px solid #e3ae30;padding:12px;border-radius:9px;margin:12px 0;font-size:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f8fb;border:1px solid #e3ebf3;border-radius:12px;padding:14px;line-height:1.6}.hidden{display:none}.small{font-size:12px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:580px}th,td{text-align:left;border-bottom:1px solid #e6edf3;padding:11px}th{background:#f4f8fc}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.sectiontitle{margin:0 0 14px}footer{padding:20px 0;color:#66788b;font-size:12px}@media(max-width:700px){.shell{padding:10px}.top{padding:19px}.grid{grid-template-columns:1fr 1fr}.student{grid-template-columns:1fr}.choices button{flex:1}.card{padding:15px}}@media(max-width:420px){.grid{grid-template-columns:1fr}}
+
+button:disabled{opacity:.5;cursor:not-allowed}.ok{color:#116c4a}.error{color:#a12828}.login{max-width:530px;margin:20px auto}.pill{padding:5px 10px;border-radius:20px;background:#e8f2fa;font-size:12px}.student{grid-template-columns:1fr auto}.nav{flex-wrap:wrap}.alert{padding:12px;border-radius:10px;background:#e8f5ec;margin:10px 0}@media(max-width:700px){.student{grid-template-columns:1fr}}
+
+:root{--primary:#134b80;--ink:#172e47;--surface:#fff;--line:#dce6ef}
+.top{position:relative;overflow:hidden;box-shadow:0 12px 25px #153e6619}
+.top::after{content:"";position:absolute;right:-80px;top:-125px;width:270px;height:270px;border-radius:50%;border:45px solid #ffffff0f}
+.top p{max-width:620px}.top h1,.top p,.top .badge{position:relative;z-index:1}
+.login{max-width:520px;margin:20px auto}
+.nav{flex-wrap:wrap}.nav button{font-size:14px}.nav button.active{box-shadow:0 3px 10px #14619936}
+.stat{letter-spacing:-1px}.card h3{font-size:17px}.card{border:1px solid #e4ecf5}
+.metric{padding:17px 18px}.metric:nth-child(2) .stat{color:#08704f}.metric:nth-child(3) .stat{color:#b64242}.metric:nth-child(4) .stat{color:#205b9c}
+.statusline{display:grid;grid-template-columns:minmax(150px,1fr) auto;gap:12px;align-items:center;border-bottom:1px solid #edf2f6;padding:12px 0}.statusline:last-child{border-bottom:none}
+.progress{height:8px;background:#eaf0f5;border-radius:999px;overflow:hidden;margin-top:7px}.progress-bar{height:100%;background:#178b78;border-radius:999px;transition:width .2s}
+.pill{display:inline-block;padding:4px 9px;border-radius:30px;background:#ecf2f8;font-size:12px;color:#38546d;font-weight:700}
+.alert{padding:12px;background:#e8f5ec;border-radius:10px}.alert.error{background:#fff0ee;color:#922e2e}
+.notice{line-height:1.55}.actions{align-items:center}.student{grid-template-columns:minmax(220px,1fr) auto;gap:10px}.student .field{grid-column:1/-1}
+.is-pending{color:#916a1c}.is-absent{color:#ad3434}.is-present{color:#08704f}
+button:disabled{opacity:.48;cursor:not-allowed}.hidden{display:none!important}
+#message{min-height:22px;padding:10px 12px;border-radius:10px}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.toolbar .field{min-width:175px}
+section.panel{scroll-margin-top:10px}.tablewrap{overflow-x:auto}.tablewrap table{min-width:680px}.muted{line-height:1.5}
+#report{max-height:500px;overflow-y:auto}#adminStudentRows select{min-width:180px}
+@media(max-width:720px){.shell{padding:10px}.top{padding:18px}.student{grid-template-columns:1fr}.choices button{flex:1}.nav{flex-wrap:nowrap;overflow-x:auto}.nav button{font-size:12px;padding:10px 12px}.metric{padding:14px}.statusline{grid-template-columns:1fr}.toolbar .field{min-width:100%}}
+@media(max-width:430px){.grid{grid-template-columns:1fr 1fr}.stat{font-size:25px}}
+</style></head><body>
+<main class="shell">
+<header class="top"><span class="badge">V2.0 • UJIAN SEJARAH KELAS • DATA REKAAN SAHAJA</span><h1>e-Kehadiran PPKI</h1><p>SMK Redang Panjang · Dashboard semua kelas ujian · Rekod awan Supabase</p></header>
+<div class="notice"><b>🔒 Mod ujian:</b> Aplikasi ini hanya membaca kelas yang bermula dengan <b>KELAS UJIAN</b> dan murid rekaan <b>MURID UJIAN</b> / <b>MURID CONTOH SISTEM</b>. Jangan masukkan nama murid sebenar ke repository GitHub atau dalam modul ujian ini. Jadual guru sesi 2027 yang dipaparkan adalah untuk ujian sahaja.</div>
+<section id="login" class="card login"><h2>🔐 Log masuk guru</h2><div class="field"><label for="email">E-mel akaun Supabase</label><input id="email" type="email" autocomplete="username" placeholder="E-mel pengguna berdaftar"></div><div class="field"><label for="password">Kata laluan</label><input id="password" type="password" autocomplete="current-password" placeholder="Kata laluan"></div><div class="actions"><button id="signIn" class="primary">Log masuk</button></div><p class="muted">Akses data tertakluk kepada polisi RLS Supabase.</p></section>
+<div id="app" class="hidden">
+<div class="card"><div class="row"><span id="identity" class="muted"></span><div class="actions"><button id="refresh" class="ghost">🔄 Muat semula awan</button><button id="signOut" class="ghost">Log keluar</button></div></div><p id="message" role="status" aria-live="polite" class="muted"></p></div>
+<nav id="nav" class="nav" aria-label="Menu aplikasi">
+<button data-tab="dashboard" class="active">🏠 Dashboard</button><button data-tab="attendance">✅ Kehadiran</button><button data-tab="records">🔎 Carian Rekod</button><button data-tab="duty">👩‍🏫 Guru Bertugas</button><button id="auditNav" class="hidden" data-tab="auditPanel">🛡️ Audit</button><button id="adminNav" class="hidden" data-tab="manageCloud">⚙️ Pengurusan Ujian</button>
+</nav>
+<section id="dashboard" class="panel">
+<div class="card"><div class="row"><div class="field"><label for="date">Tarikh laporan</label><input id="date" type="date"></div><div class="field"><label for="session">Sesi persekolahan (ujian)</label><select id="session"><option value="2027">2027</option><option value="2028">2028</option></select></div></div><p id="sessionInfo" class="muted">Memaparkan data rekaan mengikut sesi yang tersedia di Supabase.</p></div>
+<div class="grid"><div class="card metric"><div class="muted">Jumlah murid</div><div id="total" class="stat">0</div></div><div class="card metric"><div class="muted">Hadir</div><div id="present" class="stat">0</div></div><div class="card metric"><div class="muted">Tidak hadir</div><div id="absent" class="stat">0</div></div><div class="card metric"><div class="muted">Peratus kehadiran</div><div id="percent" class="stat">0%</div></div><div class="card metric"><div class="muted">Belum ditanda</div><div id="pending" class="stat">0</div></div><div class="card metric"><div class="muted">Kelas selesai</div><div id="completed" class="stat">0/0</div></div></div>
+<div class="card"><h3>Status kehadiran mengikut kelas</h3><p id="completionNotice" class="muted"></p><div id="classStatus"></div></div>
+<div class="card"><h3>Guru bertugas & guru zikir — Supabase</h3><div id="todayDuty" class="muted"></div><div class="row"><div class="field"><label for="quickMain">Guru bertugas mingguan</label><select id="quickMain"></select></div><div class="field"><label for="quickZikir">Guru zikir</label><select id="quickZikir"></select></div></div><div class="actions"><button id="quickSave" class="primary">💾 Simpan jadual ke Supabase</button></div><p id="dutyMessage" class="muted" role="status"></p><p class="muted small">Fungsi simpan pada V2.0 masih terhad kepada jadual ujian 4–8 Januari 2027; jadual rasmi belum dimasukkan.</p></div>
+<div class="card"><h3>Laporan WhatsApp (data ujian sahaja)</h3><p id="reportWarning" class="muted" role="status"></p><label style="display:block;margin:10px 0"><input id="includeReasons" type="checkbox" checked style="width:auto;min-width:0;margin-right:6px"> Sertakan sebab tidak hadir</label><pre id="report"></pre><div class="actions"><button id="copy" class="ghost">📋 Salin laporan</button><button id="share" class="primary">📤 Kongsi WhatsApp</button></div><p class="muted small">Laporan mengandungi nama murid rekaan. Semak penerima sebelum menghantar. Perkongsian disabled jika rekod belum lengkap.</p></div>
+</section>
+<section id="attendance" class="panel hidden"><div class="card"><h3>Tanda kehadiran mengikut kelas</h3><div class="row"><div class="field"><label for="classSelect">Pilih kelas</label><select id="classSelect"></select></div><div class="field"><label for="attendanceDate">Tarikh</label><input id="attendanceDate" type="date"></div></div><p class="muted">Setiap murid bermula sebagai Belum ditanda. Tekan Hadir atau Tidak Hadir; status disimpan ke Supabase. Gunakan butang Hadir Semua dengan berhati-hati kerana ia menggantikan status sedia ada.</p><div class="actions"><button id="markAll" class="primary">✓ Hadir Semua (kelas dipilih)</button></div><p id="bulkInfo" class="muted" role="status"></p><div id="studentList"></div></div></section>
+<section id="records" class="panel hidden"><div class="card"><h3>Carian sejarah kehadiran</h3><div class="row"><div class="field"><label for="search">Cari nama murid</label><input id="search" placeholder="Taip nama murid rekaan"></div><div class="field"><label for="recordClass">Kelas</label><select id="recordClass"></select></div><div class="field"><label for="recordDateStart">Tarikh mula</label><input id="recordDateStart" type="date"></div><div class="field"><label for="recordDateEnd">Tarikh akhir</label><input id="recordDateEnd" type="date"></div></div><p class="muted small">Carian kelas menggunakan kelas ketika kehadiran direkodkan, bukan kelas semasa. Rekod lama kekal dapat dicari selepas murid berpindah.</p><div class="actions"><button id="searchRecords" class="primary">Cari rekod awan</button><button id="clearRecordFilters" class="ghost">Kosongkan tapisan</button></div><p id="recordInfo" class="muted" role="status"></p><div class="tablewrap"><table><thead><tr><th>Tarikh</th><th>Nama murid</th><th>Kelas ketika rekod</th><th>Kelas semasa</th><th>Status</th><th>Sebab</th></tr></thead><tbody id="recordRows"><tr><td colspan="6">Belum dimuatkan</td></tr></tbody></table></div></div></section>
+<section id="duty" class="panel hidden"><div class="card"><h3>Jadual guru bertugas & guru zikir</h3><p class="muted">Jadual yang disimpan ke Supabase. Guru yang dinyahaktifkan tetap dipaparkan dalam rekod lama.</p><div id="dutyRows" class="tablewrap"></div></div></section>
+<section id="auditPanel" class="panel hidden"><div class="card"><h3>🛡️ Log audit kehadiran (ADMIN)</h3><p class="muted">20 rekod terkini berkaitan murid rekaan sahaja.</p><button id="auditBtn" class="ghost">Semak log audit</button><pre id="audit">Belum disemak.</pre></div></section>
+<section class="panel hidden" id="manageCloud">
+<div class="card"><h3>⚙️ Pengurusan Murid &amp; Kelas — ADMIN</h3>
+<p class="notice"><b>Mod selamat V1.7:</b> Hanya kelas bernama <code>KELAS UJIAN ...</code> dan murid bernama <code>MURID UJIAN ...</code> boleh ditambah atau dipindahkan di sini. Murid contoh asal tidak boleh dipindahkan. Semua data disimpan terus ke Supabase dan tidak dimasukkan ke kod GitHub.</p>
+<div class="actions"><button class="ghost" id="adminRefresh">🔄 Muat semula pengurusan</button></div><p class="muted" id="adminStatus" role="status">Belum dimuatkan.</p></div>
+<div class="card"><h3>Tambah kelas ujian</h3><div class="row"><div class="field"><label for="adminNewClass">Nama kelas ujian</label><input id="adminNewClass" placeholder="Contoh: KELAS UJIAN B"/></div></div><div class="actions"><button class="primary" id="adminAddClass">+ Tambah kelas ujian</button></div></div>
+<div class="card"><h3>Tambah murid ujian</h3><div class="row"><div class="field"><label for="adminNewStudent">Nama murid ujian</label><input id="adminNewStudent" placeholder="Contoh: MURID UJIAN A"/></div><div class="field"><label for="adminStudentClass">Kelas ujian</label><select id="adminStudentClass"></select></div></div><div class="actions"><button class="primary" id="adminAddStudent">+ Tambah murid ujian</button></div></div>
+<div class="card"><h3>Pindahkan murid ujian</h3><p class="muted">Pertukaran kelas akan mengubah kelas semasa murid. Sejarah kehadiran tidak dipadam. Carian sejarah menggunakan kelas pada rekod kehadiran.</p><div class="tablewrap"><table><thead><tr><th>Nama murid</th><th>Kelas sekarang</th><th>Pindah ke</th><th>Tindakan</th></tr></thead><tbody id="adminStudentRows"><tr><td colspan="4">Belum dimuatkan</td></tr></tbody></table></div></div>
+<div class="card"><h3>Senarai kelas ujian</h3><div class="muted" id="adminClassRows">Belum dimuatkan.</div></div>
+<div class="card"><h3>👩‍🏫 Pengurusan guru — ADMIN (ujian sahaja)</h3><p class="notice">Hanya nama yang bermula dengan <b>GURU UJIAN</b> boleh ditambah atau dinyahaktifkan dalam V1.8. Akaun guru sebenar dan ADMIN tidak akan diubah melalui menu ujian ini. Guru baharu belum boleh log masuk sehingga akaun Auth dipautkan.</p>
+<div class="row"><div class="field"><label for="newTestTeacher">Nama guru ujian</label><input id="newTestTeacher" placeholder="GURU UJIAN C"/></div><div class="field"><label for="newTeacherUid">User UID akaun ujian (pilihan)</label><input autocomplete="off" id="newTeacherUid" placeholder="Kosongkan jika belum ada akaun Auth"/></div></div>
+<div class="actions"><button class="primary" id="addTestTeacher">+ Tambah GURU UJIAN</button><button class="ghost" id="refreshTeachers">🔄 Muat semula guru</button></div>
+<p class="muted" id="teacherAdminMessage" role="status"></p><div class="tablewrap" id="teacherRows">Belum dimuatkan.</div></div>
+</section>
+</div><footer>e-Kehadiran PPKI V2.0 • Prototaip data rekaan • Supabase RLS mengawal kebenaran sebenar • Jangan gantikan V1.9 sehingga ujian selesai</footer></main>
+<script type="module">
+import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+// Public/publishable key only; NEVER put a service_role or secret key in a public web app.
+const sb = createClient('https://umagwcxfnhuynkqbwpbg.supabase.co', 'sb_publishable_yMjaaC8wu-9ehzUrib1-cg_NyAP6Jep', {auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:false}});
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const iso = () => {const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,10)};
+const testClass = n => /^KELAS UJIAN(?:\s|$)/i.test(String(n||'').trim());
+const testStudent = n => /^MURID UJIAN(?:\s|$)/i.test(String(n||'').trim());
+const isDemoStudent = n => testStudent(n) || String(n||'').trim().toUpperCase()==='MURID CONTOH SISTEM';
+let user=null,adminAllowed=false,classes=[],students=[],dayRecords=new Map(),history=[],staff=[],dutySchedule=[];
+let adminClasses=[],adminStudents=[];
+let busy=false,loaded=false,lastHistoryLimit=false;
+const notify=(text,bad=false)=>{const el=$('message');el.textContent=text;el.className=bad?'alert error':'alert';};
+const currentSession = () => $('session').value;
+const selectedDate = () => $('date').value;
+const className = id => classes.find(c=>String(c.id)===String(id))?.nama_kelas || 'Tidak diketahui';
+const dayRecord = id => dayRecords.get(String(id))||null;
+function setBusy(flag){busy=flag;['markAll','quickSave','share','copy'].forEach(id=>{$(id).disabled=flag});renderReportButtons()}
+const today=iso();$('date').value=today;$('attendanceDate').value=today;
+function localDate(d){const t=new Date(d+'T12:00:00');if(!Number.isFinite(t.getTime()))return '';return [t.getFullYear(),String(t.getMonth()+1).padStart(2,'0'),String(t.getDate()).padStart(2,'0')].join('-')}
+function weekBounds(d){const t=new Date(d+'T12:00:00');if(!Number.isFinite(t.getTime()))return null;t.setDate(t.getDate()-(t.getDay()+6)%7);const start=localDate(`${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`);t.setDate(t.getDate()+4);return [start,localDate(`${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`)]}
+const dutyFor = d => dutySchedule.find(x=>x.tarikh_mula<=d&&x.tarikh_akhir>=d)||null;
+const teacherById = id => staff.find(t=>String(t.id)===String(id));
+const teacherName = id => teacherById(id)?.nama_guru || 'Belum ditetapkan';
+function staffOptions(id, chosen){
+ const el=$(id),active=staff.filter(t=>t.aktif);
+ el.innerHTML='<option value="">— Pilih guru aktif —</option>'+active.map(t=>`<option value="${esc(t.id)}">${esc(t.nama_guru)}</option>`).join('');
+ if(chosen&&!active.some(t=>String(t.id)===String(chosen))){const former=teacherById(chosen);if(former)el.add(new Option(former.nama_guru+' (tidak aktif)',String(former.id)))}
+ el.value=chosen?String(chosen):'';
+}
+function renderDuty(){
+ const d=selectedDate(),du=dutyFor(d);
+ staffOptions('quickMain',du?.guru_bertugas_id);staffOptions('quickZikir',du?.guru_zikir_id);
+ $('todayDuty').innerHTML=du?`<p><b>${esc(du.tarikh_mula)} – ${esc(du.tarikh_akhir)}</b></p><p>👩‍🏫 Guru bertugas: <b>${esc(teacherName(du.guru_bertugas_id))}</b></p><p>📿 Guru zikir: <b>${esc(teacherName(du.guru_zikir_id))}</b></p>`:'<p>Belum ada jadual bagi tarikh dipilih.</p>';
+ $('dutyMessage').textContent=du?`Jadual awan dipaparkan untuk ${du.tarikh_mula} hingga ${du.tarikh_akhir}.`:'Tiada jadual awan untuk tarikh laporan.';
+ $('dutyRows').innerHTML=dutySchedule.length?`<table><thead><tr><th>Tarikh mula</th><th>Tarikh akhir</th><th>Guru bertugas</th><th>Guru zikir</th></tr></thead><tbody>${dutySchedule.map(x=>`<tr><td>${esc(x.tarikh_mula)}</td><td>${esc(x.tarikh_akhir)}</td><td>${esc(teacherName(x.guru_bertugas_id))}</td><td>${esc(teacherName(x.guru_zikir_id))}</td></tr>`).join('')}</tbody></table>`:'<p class="muted">Belum ada jadual.</p>';
+}
+async function loadStaff(){
+ if(!user)return;
+ try{
+  const [g,t]=await Promise.all([
+   sb.from('guru').select('id,nama_guru,aktif,peranan,user_id').order('nama_guru').limit(300),
+   sb.from('tugasan_guru').select('id,tarikh_mula,tarikh_akhir,guru_bertugas_id,guru_zikir_id').order('tarikh_mula',{ascending:false}).limit(400)
+  ]);
+  if(g.error)throw g.error;if(t.error)throw t.error;
+  staff=g.data||[];dutySchedule=t.data||[];
+  renderDuty();renderReport();renderTeacherAdmin();
+ }catch(e){staff=[];dutySchedule=[];renderDuty();notify('Gagal memuatkan guru/jadual: '+e.message,true)}
+}
+function getSessionYear(x){for(const k of ['tahun','sesi'])if(x?.[k]!=null&&/^\d{4}$/.test(String(x[k]).trim()))return String(x[k]).trim();return null}
+function eligibleClasses(all){return all.filter(c=>testClass(c.nama_kelas)&&(!getSessionYear(c)||getSessionYear(c)===currentSession()))}
+function getCounts(){const ss=students;let present=0,absent=0,pending=0;for(const s of ss){const r=dayRecord(s.id);if(r?.status==='HADIR')present++;else if(r?.status==='TIDAK HADIR')absent++;else pending++}return {present,absent,pending,total:ss.length}}
+function populateSelectors(){
+ for(const [id,all] of [['classSelect',false],['recordClass',true]]){
+  const select=$(id),prev=select.value;
+  select.innerHTML=(all?'<option value="">Semua kelas ujian</option>':'')+classes.map(c=>`<option value="${esc(c.id)}">${esc(c.nama_kelas)}</option>`).join('');
+  if([...select.options].some(o=>o.value===prev))select.value=prev;
+ }
+}
+function renderDashboard(){
+ const {present,absent,pending,total}=getCounts();
+ $('total').textContent=total;$('present').textContent=present;$('absent').textContent=absent;$('pending').textContent=pending;
+ $('percent').textContent=(total?((100*present/total).toFixed(1)):'0.0')+'%';
+ const hasStudents=classes.filter(c=>students.some(s=>String(s.kelas_id)===String(c.id)));
+ const completed=hasStudents.filter(c=>students.filter(s=>String(s.kelas_id)===String(c.id)).every(s=>!!dayRecord(s.id))).length;
+ $('completed').textContent=`${completed}/${hasStudents.length}`;
+ $('completionNotice').textContent=!loaded?'Data belum dimuatkan.':!total?'Tiada murid rekaan bagi sesi ini.':pending?`⏳ ${pending} murid belum ditanda. Laporan belum lengkap.`:'✅ Semua murid rekaan telah ditanda.';
+ $('classStatus').innerHTML=classes.map(c=>{const list=students.filter(s=>String(s.kelas_id)===String(c.id)),done=list.filter(s=>!!dayRecord(s.id)).length,pc=list.length?100*done/list.length:0;return `<div class="statusline"><div><b>${esc(c.nama_kelas)}</b><div class="progress"><div class="progress-bar" style="width:${pc}%"></div></div></div><span class="pill">${done}/${list.length} ditanda ${list.length&&done===list.length?'✅':list.length?'⏳':'—'}</span></div>`}).join('')||'<p class="muted">Tiada kelas ujian yang dapat dibaca.</p>';
+ $('sessionInfo').textContent=`Sesi ${currentSession()} · ${classes.length} kelas ujian · ${total} murid rekaan`;
+}
+function renderAttendance(){
+ const cid=$('classSelect').value,d=$('attendanceDate').value;
+ const ss=students.filter(s=>String(s.kelas_id)===String(cid));
+ const done=ss.filter(s=>!!dayRecord(s.id)).length;
+ $('bulkInfo').textContent=ss.length?`${done}/${ss.length} murid ditanda bagi ${d}.`:'Tiada murid rekaan dalam kelas ini.';
+ $('markAll').disabled=busy||!ss.length;
+ $('studentList').innerHTML=ss.length?ss.map(s=>{
+  const r=dayRecord(s.id);return `<div class="student"><div><b>${esc(s.nama_murid)}</b><div class="muted">${esc(className(s.kelas_id))}</div></div><div class="choices"><button data-student="${esc(s.id)}" data-status="HADIR" class="yes ${r?.status==='HADIR'?'selected':''}">✓ Hadir</button><button data-student="${esc(s.id)}" data-status="TIDAK HADIR" class="no ${r?.status==='TIDAK HADIR'?'selected':''}">✕ Tidak hadir</button>${adminAllowed?`<button data-student="${esc(s.id)}" data-status="" class="ghost ${!r?'selected':''}">Kosong</button>`:''}</div>${r?.status==='TIDAK HADIR'?`<div class="field"><label for="reason-${esc(s.id)}">Sebab tidak hadir</label><select id="reason-${esc(s.id)}" data-reason-student="${esc(s.id)}">${['Belum dimaklumkan','Sakit','Urusan keluarga','Pengangkutan','Ujian sistem','Lain-lain'].map(v=>`<option value="${esc(v)}" ${r.sebab===v?'selected':''}>${esc(v)}</option>`).join('')}</select></div>`:''}</div>`
+ }).join(''):'<p class="muted">Pilih kelas ujian yang mengandungi murid rekaan.</p>';
+}
+function report(){
+ const d=selectedDate(),{total,present,absent,pending}=getCounts(),du=dutyFor(d);
+ const displayDate=d?d.split('-').reverse().join('/'):'—';
+ let out=`📋 LAPORAN KEHADIRAN PPKI — DATA UJIAN\n🏫 SMK REDANG PANJANG\n📅 Tarikh: ${displayDate}\n📆 Sesi: ${currentSession()}\n👨‍🏫 Guru bertugas: ${teacherName(du?.guru_bertugas_id)}\n📿 Guru zikir: ${teacherName(du?.guru_zikir_id)}\n`;
+ for(const c of classes){const ss=students.filter(s=>String(s.kelas_id)===String(c.id));if(!ss.length)continue;
+  const missed=ss.filter(s=>dayRecord(s.id)?.status==='TIDAK HADIR');
+  out+='\n*'+c.nama_kelas+'*\n';
+  out+=missed.length?missed.map((s,i)=>`${i+1}. ${s.nama_murid}${$('includeReasons').checked&&dayRecord(s.id)?.sebab?' — '+dayRecord(s.id).sebab:''}`).join('\n'):'Tiada murid tidak hadir';out+='\n';
+ }
+ out+=`\n*RINGKASAN*\n✅ Hadir: ${present}\n❌ Tidak hadir: ${absent}\n⏳ Belum ditanda: ${pending}\n👥 Jumlah murid: ${total}\n📊 Peratus: ${total?(100*present/total).toFixed(1):'0.0'}%`;
+ if(pending||!total)out+='\n⚠️ LAPORAN BELUM LENGKAP';
+ return out;
+}
+function renderReportButtons(){const {pending,total}=getCounts(),okay=loaded&&!!total&&!pending&&!busy; $('share').disabled=!okay;$('copy').disabled=!okay}
+function renderReport(){const {pending,total}=getCounts();$('report').textContent=report();$('reportWarning').textContent=!total?'Belum ada murid rekaan untuk dilaporkan.':pending?`⚠️ ${pending} murid belum ditanda; perkongsian dinyahaktifkan.`:'✅ Semua rekod kehadiran murid rekaan telah lengkap.';renderReportButtons()}
+function renderAll(){populateSelectors();renderDashboard();renderAttendance();renderReport();renderDuty();renderHistoryRows()}
+async function loadDay(){
+ dayRecords=new Map();
+ if(!students.length)return;
+ const ids=students.map(s=>s.id);
+ const {data,error}=await sb.from('kehadiran').select('id,murid_id,kelas_id,tarikh,status,sebab,updated_at').in('murid_id',ids).eq('tarikh',selectedDate()).limit(500);
+ if(error)throw error;
+ for(const row of data||[])dayRecords.set(String(row.murid_id),row);
+}
+async function load(){
+ if(!user)return;
+ try{
+  notify('Memuatkan kelas, murid dan rekod awan...');loaded=false;dayRecords=new Map();
+  const {data:cs,error:ce}=await sb.from('kelas').select('*').ilike('nama_kelas','KELAS UJIAN%').order('nama_kelas').limit(200);
+  if(ce)throw ce;classes=eligibleClasses(cs||[]);
+  const ids=classes.map(c=>c.id);
+  if(ids.length){const {data:ss,error:se}=await sb.from('murid').select('id,nama_murid,kelas_id').in('kelas_id',ids).order('nama_murid').limit(400);if(se)throw se;students=(ss||[]).filter(s=>isDemoStudent(s.nama_murid));}
+  else students=[];
+  if(students.length>150)throw Error('Terlalu banyak rekod ujian untuk mod prototaip. Had 150 murid.');
+  await loadDay();loaded=true;renderAll();
+  notify(`Data awan dimuatkan: ${classes.length} kelas, ${students.length} murid rekaan. ${students.length?'':'Semak sesi atau kebenaran akses jika data dijangka wujud.'}`);
+ }catch(e){loaded=false;classes=[];students=[];dayRecords=new Map();renderAll();notify('Gagal memuatkan data: '+e.message,true)}
+}
+async function changeDay(d){if(!d)return;$('date').value=d;$('attendanceDate').value=d;try{await loadDay();renderAll()}catch(e){dayRecords=new Map();renderAll();notify('Gagal membaca kehadiran tarikh ini: '+e.message,true)}}
+async function mark(id,st){
+ const s=students.find(x=>String(x.id)===String(id));if(!user||!s||busy)return notify('Murid ujian tidak dapat dipilih.',true);
+ if(!isDemoStudent(s.nama_murid)||!testClass(className(s.kelas_id)))return notify('Hanya murid dan kelas rekaan dibenarkan.',true);
+ if(st===''&&!adminAllowed)return notify('Mengosongkan rekod dikhaskan kepada ADMIN dalam mod ujian.',true);
+ const date=$('attendanceDate').value;if(!date)return notify('Pilih tarikh yang sah.',true);
+ const old=dayRecord(id);
+ let reason=st==='TIDAK HADIR'?($(`reason-${id}`)?.value||old?.sebab||'Belum dimaklumkan'):null;
+ if(st===old?.status&&reason===(old.sebab??null))return notify('Tiada perubahan kehadiran untuk disimpan.');
+ if(st===''){
+  if(!old)return notify('Rekod sudah kosong.');
+  if(!confirm('Kosongkan rekod kehadiran untuk '+s.nama_murid+'?'))return;
+ }
+ setBusy(true);
+ try{
+  let result;
+  if(!st){result=await sb.from('kehadiran').delete().eq('id',old.id).select('id')}
+  else if(old){result=await sb.from('kehadiran').update({status:st,sebab:reason}).eq('id',old.id).select('id')}
+  else {result=await sb.from('kehadiran').insert({murid_id:s.id,kelas_id:s.kelas_id,tarikh:date,status:st,sebab:reason}).select('id')}
+  if(result.error)throw result.error;if(!result.data?.length)throw Error('Tiada rekod disimpan. Semak polisi RLS.');
+  await loadDay();renderAll();notify('Rekod '+s.nama_murid+' berjaya disimpan.');
+ }catch(e){notify('Gagal simpan kehadiran: '+e.message,true)}finally{setBusy(false)}
+}
+async function markAll(){
+ if(busy)return;
+ const cid=$('classSelect').value,ss=students.filter(s=>String(s.kelas_id)===String(cid));
+ if(!ss.length)return notify('Kelas ini tiada murid ujian.',true);
+ if(!confirm(`Tandakan semua ${ss.length} murid rekaan dalam ${className(cid)} sebagai HADIR? Status Tidak Hadir sedia ada juga akan diganti.`))return;
+ setBusy(true);let saved=0,failed=[];
+ try{
+  for(const s of ss){
+   const old=dayRecord(s.id);if(old?.status==='HADIR'&&!old.sebab)continue;
+   const res=old?await sb.from('kehadiran').update({status:'HADIR',sebab:null}).eq('id',old.id).select('id'):
+    await sb.from('kehadiran').insert({murid_id:s.id,kelas_id:s.kelas_id,tarikh:$('attendanceDate').value,status:'HADIR',sebab:null}).select('id');
+   if(res.error||!res.data?.length){failed.push(s.nama_murid+': '+(res.error?.message||'tidak dapat disimpan'))}else saved++;
+  }
+  await loadDay();renderAll();
+  if(failed.length)notify(`${saved} rekod dikemas kini; ${failed.length} gagal. ${failed.slice(0,2).join('; ')}`,true);
+  else notify(`Hadir Semua selesai. ${saved} rekod baharu/berubah telah disimpan.`);
+ }catch(e){notify('Hadir Semua gagal: '+e.message,true)}finally{setBusy(false)}
+}
+function renderHistoryRows(){
+ // Rujuk kelas_id yang disimpan pada kehadiran, bukan kelas_id terkini pada murid.
+ // Dengan ini, pertukaran kelas tidak mengubah sejarah tempat kehadiran direkodkan.
+ const q=$('search').value.trim().toLowerCase(),cid=$('recordClass').value;
+ const start=$('recordDateStart').value,end=$('recordDateEnd').value;
+ const studentById=new Map(students.map(s=>[String(s.id),s]));
+ const filtered=history.filter(r=>{
+  const s=studentById.get(String(r.murid_id));
+  return !!s&&(!q||s.nama_murid.toLowerCase().includes(q))
+   &&(!cid||String(r.kelas_id)===String(cid))
+   &&(!start||r.tarikh>=start)&&(!end||r.tarikh<=end);
+ });
+ $('recordRows').innerHTML=filtered.map(r=>{
+  const s=studentById.get(String(r.murid_id));
+  return `<tr><td>${esc(r.tarikh)}</td><td>${esc(s.nama_murid)}</td><td>${esc(className(r.kelas_id))}</td><td>${esc(className(s.kelas_id))}</td><td><span class="${r.status==='HADIR'?'is-present':'is-absent'}">${esc(r.status)}</span></td><td>${esc(r.sebab||'—')}</td></tr>`;
+ }).join('')||'<tr><td colspan="6">Tiada rekod sepadan dengan tapisan.</td></tr>';
+ $('recordInfo').textContent=`${filtered.length} rekod ditunjukkan${lastHistoryLimit?' · Had 500 rekod terkini. Gunakan tarikh untuk mengecilkan carian.':''}.`;
+}
+async function loadHistory(){
+ if(!user)return;
+ const start=$('recordDateStart').value,end=$('recordDateEnd').value;
+ if(start&&end&&start>end)return notify('Tarikh mula tidak boleh selepas tarikh akhir.',true);
+ if(!students.length){history=[];lastHistoryLimit=false;renderHistoryRows();return}
+ try{
+  $('recordInfo').textContent='Memuatkan sejarah awan...';
+  let q=sb.from('kehadiran').select('id,murid_id,kelas_id,tarikh,status,sebab').in('murid_id',students.map(s=>s.id));
+  if(start)q=q.gte('tarikh',start);if(end)q=q.lte('tarikh',end);
+  const {data,error}=await q.order('tarikh',{ascending:false}).limit(500);
+  if(error)throw error;history=data||[];lastHistoryLimit=history.length===500;renderHistoryRows();
+ }catch(e){history=[];$('recordInfo').textContent='Gagal memuatkan sejarah: '+e.message}
+}
+async function showUser(u){
+ user=u;$('login').classList.toggle('hidden',!!u);$('app').classList.toggle('hidden',!u);
+ if(u){$('identity').textContent='Log masuk: '+(u.email||'Akaun guru');document.querySelector('[data-tab="dashboard"]').click();await checkAdmin();await load();await loadStaff()}
+ else {adminAllowed=false;loaded=false;classes=[];students=[];dayRecords=new Map();history=[];staff=[];dutySchedule=[];$('adminNav').classList.add('hidden');$('auditNav').classList.add('hidden');notify('Log keluar selesai.')}
+}
+$('signIn').onclick=async()=>{try{const {data,error}=await sb.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value});if(error)throw error;$('password').value='';await showUser(data.user)}catch(e){notify('Log masuk gagal: '+e.message,true)}};
+$('signOut').onclick=async()=>{const {error}=await sb.auth.signOut();if(error)return notify(error.message,true);await showUser(null)};
+$('refresh').onclick=async()=>{await load();await loadStaff();if(adminAllowed)await loadAdmin()};
+$('date').onchange=()=>changeDay(selectedDate());$('attendanceDate').onchange=()=>changeDay($('attendanceDate').value);
+$('session').onchange=async()=>{history=[];await load()};
+$('classSelect').onchange=renderAttendance;$('markAll').onclick=markAll;
+$('studentList').onclick=e=>{const b=e.target.closest('[data-status]');if(b)mark(b.dataset.student,b.dataset.status)};
+$('studentList').onchange=e=>{if(e.target.matches('[data-reason-student]'))mark(e.target.dataset.reasonStudent,'TIDAK HADIR')};
+$('includeReasons').onchange=renderReport;
+$('search').oninput=renderHistoryRows;$('recordClass').onchange=renderHistoryRows;$('recordDateStart').onchange=renderHistoryRows;$('recordDateEnd').onchange=renderHistoryRows;
+$('searchRecords').onclick=loadHistory;
+$('clearRecordFilters').onclick=()=>{$('search').value='';$('recordClass').value='';$('recordDateStart').value='';$('recordDateEnd').value='';loadHistory()};
+$('quickSave').onclick=async()=>{
+ if(!user||busy)return;const main=Number($('quickMain').value),zikir=Number($('quickZikir').value),d=selectedDate();
+ if(!staff.some(t=>t.aktif&&Number(t.id)===main)||!staff.some(t=>t.aktif&&Number(t.id)===zikir))return notify('Pilih dua guru aktif.',true);
+ const bounds=weekBounds(d);if(!bounds)return notify('Tarikh tidak sah.',true);
+ if(bounds[0]!=='2027-01-04')return notify('Dalam V1.9, hanya minggu ujian 4–8 Januari 2027 boleh disimpan.',true);
+ const old=dutySchedule.find(x=>x.tarikh_mula===bounds[0]&&x.tarikh_akhir===bounds[1]);
+ if(dutySchedule.some(x=>x.id!==old?.id&&x.tarikh_mula<=bounds[1]&&x.tarikh_akhir>=bounds[0]))return notify('Minggu bertindih dengan jadual lain. Semak rekod awan.',true);
+ if(!confirm('Simpan jadual 4–8 Januari 2027 ke Supabase?'))return;
+ try{
+  const row={guru_bertugas_id:main,guru_zikir_id:zikir};
+  const result=old?await sb.from('tugasan_guru').update(row).eq('id',old.id).select('id'):
+   await sb.from('tugasan_guru').insert({...row,tarikh_mula:bounds[0],tarikh_akhir:bounds[1]}).select('id');
+  if(result.error)throw result.error;if(!result.data?.length)throw Error('Tiada rekod disimpan. Semak RLS.');
+  await loadStaff();notify('Jadual guru berjaya disimpan di Supabase.');
+ }catch(e){notify('Gagal menyimpan jadual: '+e.message,true)}
+};
+$('copy').onclick=async()=>{if($('copy').disabled)return;try{await navigator.clipboard.writeText(report());notify('Laporan ujian disalin.')}catch(e){notify('Gagal salin: '+e.message,true)}};
+$('share').onclick=()=>{if($('share').disabled)return;if(!confirm('Buka WhatsApp dengan laporan DATA REKAAN? Semak penerima sebelum menghantar.'))return;window.open('https://wa.me/?text='+encodeURIComponent(report()),'_blank','noopener,noreferrer')};
+$('auditBtn').onclick=async()=>{
+ if(!adminAllowed)return notify('Akses ADMIN diperlukan untuk audit.',true);
+ if(!students.length)return $('audit').textContent='Tiada murid rekaan.';
+ const {data,error}=await sb.from('audit_kehadiran').select('tindakan,status_lama,status_baru,diubah_oleh,masa_perubahan,murid_id').in('murid_id',students.map(s=>s.id)).order('masa_perubahan',{ascending:false}).limit(20);
+ if(error)return notify('Audit: '+error.message,true);$('audit').textContent=JSON.stringify(data||[],null,2);
+};
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{
+ if(b.id==='adminNav'&&!adminAllowed)return;if(b.id==='auditNav'&&!adminAllowed)return;
+ document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));
+ document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('hidden',x.id!==b.dataset.tab));
+ if(b.dataset.tab==='records')loadHistory();
+});
+// V1.8 — ADMIN manages ONLY synthetic test records; Supabase RLS is final authority.
+const adminInfo=(t,bad=false)=>{const el=$('adminStatus');el.textContent=t;el.style.color=bad?'#a12828':'#116c4a'};
+async function checkAdmin(){
+  adminAllowed=false;$('adminNav').classList.add('hidden');$('auditNav').classList.add('hidden');
+  if(!user)return;
+  const {data,error}=await sb.from('guru').select('peranan,aktif').eq('user_id',user.id).maybeSingle();
+  if(error){notify('Semakan peranan gagal: '+error.message,true);document.querySelector('[data-tab=dashboard]').click();return}
+  adminAllowed=!!(data&&data.aktif===true&&data.peranan==='ADMIN');
+  $('adminNav').classList.toggle('hidden',!adminAllowed);$('auditNav').classList.toggle('hidden',!adminAllowed);if(!adminAllowed&&$('manageCloud').classList.contains('hidden')===false){document.querySelector('[data-tab=dashboard]').click()}
+  if(adminAllowed)await loadAdmin();
+}
+function adminFill(){
+ const testClasses=adminClasses.filter(c=>testClass(c.nama_kelas));
+ const options=testClasses.map(c=>`<option value="${esc(c.id)}">${esc(c.nama_kelas)}</option>`).join('');
+ $('adminStudentClass').innerHTML=options;
+ $('adminClassRows').innerHTML=testClasses.map(c=>`<div style="padding:7px;border-bottom:1px solid #eee">${esc(c.nama_kelas)}</div>`).join('')||'Tiada kelas ujian tersedia.';
+ const ids=new Set(testClasses.map(c=>String(c.id)));
+ const sample=adminStudents.filter(s=>testStudent(s.nama_murid));
+ $('adminStudentRows').innerHTML=sample.map(s=>{
+ const current=adminClasses.find(c=>String(c.id)===String(s.kelas_id));
+ const targets=testClasses.filter(c=>String(c.id)!==String(s.kelas_id));
+ return `<tr><td>${esc(s.nama_murid)}</td><td>${esc(current?.nama_kelas||'Tidak diketahui')}</td><td><select data-target="${esc(s.id)}">${targets.map(c=>`<option value="${esc(c.id)}">${esc(c.nama_kelas)}</option>`).join('')}</select></td><td><button class="primary" data-admin-move="${esc(s.id)}" ${!targets.length||!ids.has(String(s.kelas_id))?'disabled':''}>Pindah</button></td></tr>`
+ }).join('')||'<tr><td colspan="4">Belum ada MURID UJIAN baharu.</td></tr>';
+}
+async function loadAdmin(){
+ if(!user||!adminAllowed)return;
+ try{
+ adminInfo('Memuatkan rekod pengurusan ujian...');
+ const [a,b]=await Promise.all([sb.from('kelas').select('*').order('nama_kelas').limit(300),sb.from('murid').select('*').order('nama_murid').limit(500)]);
+ if(a.error)throw a.error;if(b.error)throw b.error;
+ adminClasses=a.data||[];adminStudents=b.data||[];
+ adminFill();adminInfo(`Data awan berjaya dimuatkan: ${adminClasses.filter(c=>testClass(c.nama_kelas)).length} kelas ujian dan ${adminStudents.filter(s=>testStudent(s.nama_murid)).length} murid ujian.`)
+ }catch(e){adminInfo('Gagal memuatkan pengurusan: '+e.message,true)}
+}
+$('adminRefresh').onclick=loadAdmin;
+$('adminAddClass').onclick=async()=>{
+ if(!adminAllowed)return adminInfo('Akses ADMIN diperlukan.',true);
+ const n=$('adminNewClass').value.trim().replace(/\s+/g,' ').toUpperCase();
+ if(!testClass(n)||n.length>80||n==='KELAS UJIAN SISTEM')return adminInfo('Gunakan nama seperti KELAS UJIAN B (maksimum 80 aksara).',true);
+ if(adminClasses.some(c=>c.nama_kelas?.toUpperCase()===n))return adminInfo('Kelas itu sudah ada.',true);
+ if(!confirm('Tambah '+n+' ke pangkalan data Supabase?'))return;
+ // Copy an existing test class session/year only if those fields exist; never copy identity fields.
+ const sample=adminClasses.find(c=>c.nama_kelas==='KELAS UJIAN SISTEM');
+ const row={nama_kelas:n};
+ for(const col of ['tahun','sesi'])if(sample&&sample[col]!=null)row[col]=sample[col];
+ const {error}=await sb.from('kelas').insert(row);
+ if(error)return adminInfo('Gagal tambah kelas: '+error.message,true);
+ $('adminNewClass').value='';await loadAdmin();await load();adminInfo(n+' berjaya ditambah ke Supabase.');
+};
+$('adminAddStudent').onclick=async()=>{
+ if(!adminAllowed)return adminInfo('Akses ADMIN diperlukan.',true);
+ const n=$('adminNewStudent').value.trim().replace(/\s+/g,' ').toUpperCase();
+ const cid=$('adminStudentClass').value,c=adminClasses.find(x=>String(x.id)===cid);
+ if(!testStudent(n)||n.length>120)return adminInfo('Gunakan nama seperti MURID UJIAN A (maksimum 120 aksara).',true);
+ if(!c||!testClass(c.nama_kelas))return adminInfo('Pilih kelas ujian yang sah.',true);
+ if(adminStudents.some(s=>s.nama_murid?.toUpperCase()===n))return adminInfo('Nama murid ujian ini sudah ada.',true);
+ if(!confirm('Tambah '+n+' ke '+c.nama_kelas+'?'))return;
+ const example=adminStudents.find(s=>s.nama_murid==='MURID CONTOH SISTEM');
+ const row={nama_murid:n,kelas_id:c.id};
+ for(const col of ['tahun','sesi'])if(example&&example[col]!=null)row[col]=example[col];
+ const {error}=await sb.from('murid').insert(row);
+ if(error)return adminInfo('Gagal tambah murid: '+error.message,true);
+ $('adminNewStudent').value='';await loadAdmin();await load();adminInfo(n+' berjaya ditambah ke Supabase.');
+};
+$('adminStudentRows').onclick=async e=>{
+ const b=e.target.closest('[data-admin-move]');if(!b||!adminAllowed)return;
+ const s=adminStudents.find(x=>String(x.id)===b.dataset.adminMove),sel=$('adminStudentRows').querySelector(`select[data-target="${CSS.escape(b.dataset.adminMove)}"]`);
+ const c=adminClasses.find(x=>String(x.id)===sel?.value),from=adminClasses.find(x=>String(x.id)===String(s?.kelas_id));
+ if(!s||!testStudent(s.nama_murid)||!c||!testClass(c.nama_kelas)||!from||!testClass(from.nama_kelas))return adminInfo('Pemindahan terhad kepada murid dan kelas ujian.',true);
+ if(!confirm('Pindahkan '+s.nama_murid+' daripada '+from.nama_kelas+' ke '+c.nama_kelas+'?'))return;
+ const {error}=await sb.from('murid').update({kelas_id:c.id}).eq('id',s.id);
+ if(error)return adminInfo('Gagal pindah kelas: '+error.message,true);
+ await loadAdmin();await load();adminInfo('Pemindahan disimpan di Supabase. Sejarah kehadiran tidak dipadam.');
+};
+
+
+// Administration of synthetic teacher accounts only; users are created in Auth separately.
+const teacherTest=n=>/^GURU UJIAN(?:\s|$)/i.test(String(n||'').trim());
+function teacherAdminInfo(t,bad=false){const el=$('teacherAdminMessage');el.textContent=t;el.style.color=bad?'#a12828':'#116c4a'}
+function renderTeacherAdmin(){if(!adminAllowed)return;const html=staff.map(t=>`<tr><td>${esc(t.nama_guru)}</td><td>${esc(t.peranan)}</td><td>${t.aktif?'Aktif':'Tidak aktif'}</td><td>${t.user_id?'Dipautkan':'Belum dipautkan'}</td><td>${teacherTest(t.nama_guru)&&String(t.user_id)!==String(user?.id)?`<button data-toggle-teacher="${esc(t.id)}" class="${t.aktif?'danger':'success'}">${t.aktif?'Nyahaktif':'Aktifkan'}</button>`:'—'}</td></tr>`).join('');$('teacherRows').innerHTML=`<table><thead><tr><th>Nama</th><th>Peranan</th><th>Status</th><th>Akaun Auth</th><th>Tindakan ujian</th></tr></thead><tbody>${html||'<tr><td colspan="5">Tiada guru</td></tr>'}</tbody></table>`}
+$('refreshTeachers').onclick=loadStaff;
+$('addTestTeacher').onclick=async()=>{
+ if(!adminAllowed)return teacherAdminInfo('ADMIN sahaja.',true);
+ const n=$('newTestTeacher').value.trim().replace(/\s+/g,' ').toUpperCase(),uid=$('newTeacherUid').value.trim();
+ if(!teacherTest(n)||n.length>100)return teacherAdminInfo('Nama mestilah GURU UJIAN ... (maksimum 100 aksara).',true);
+ if(uid&&!/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(uid))return teacherAdminInfo('Format User UID tidak sah.',true);
+ if(staff.some(t=>t.nama_guru.toUpperCase()===n))return teacherAdminInfo('Nama guru ini telah wujud.',true);
+ if(uid&&staff.some(t=>t.user_id===uid))return teacherAdminInfo('User UID sudah dipautkan kepada guru lain.',true);
+ if(!confirm('Tambah '+n+' sebagai GURU aktif dalam Supabase?'))return;
+ const row={nama_guru:n,aktif:true,peranan:'GURU'};if(uid)row.user_id=uid;
+ const {data,error}=await sb.from('guru').insert(row).select('id');
+ if(error)return teacherAdminInfo('Gagal tambah guru: '+error.message+'. Jika berkaitan ID, semak penjana ID automatik.',true);
+ if(!data?.length)return teacherAdminInfo('Tiada rekod ditambah. Semak RLS.',true);
+ $('newTestTeacher').value='';$('newTeacherUid').value='';await loadStaff();teacherAdminInfo(n+' berjaya ditambah.');
+};
+$('teacherRows').onclick=async e=>{
+ const b=e.target.closest('[data-toggle-teacher]');if(!b||!adminAllowed)return;
+ const t=staff.find(x=>String(x.id)===b.dataset.toggleTeacher);
+ if(!t||!teacherTest(t.nama_guru)||String(t.user_id)===String(user?.id)||t.peranan==='ADMIN')return teacherAdminInfo('Rekod ini tidak boleh diubah dalam mod ujian.',true);
+ if(!confirm((t.aktif?'Nyahaktifkan':'Aktifkan')+' '+t.nama_guru+'? Rekod tugasan lama kekal.'))return;
+ const {data,error}=await sb.from('guru').update({aktif:!t.aktif}).eq('id',t.id).select('id');
+ if(error)return teacherAdminInfo('Gagal mengubah status: '+error.message,true);
+ if(!data?.length)return teacherAdminInfo('Tiada rekod berubah. Semak RLS.',true);
+ await loadStaff();teacherAdminInfo('Status guru berjaya dikemas kini.');
+};
+
+const {data:{session}}=await sb.auth.getSession();
+await showUser(session?.user||null);
+</script></body></html>
